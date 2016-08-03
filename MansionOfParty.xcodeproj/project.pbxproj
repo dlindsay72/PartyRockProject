@@ -11,6 +11,10 @@
 		7B8141601D525D6900D92B4B /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B81415E1D525D6900D92B4B /* still time.ttf */; };
 		7B8141631D525EC400D92B4B /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8141621D525EC400D92B4B /* VideoVC.swift */; };
 		7B8141641D525EC400D92B4B /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8141621D525EC400D92B4B /* VideoVC.swift */; };
+		7B8141661D525FD200D92B4B /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8141651D525FD200D92B4B /* PartyCell.swift */; };
+		7B8141671D525FD200D92B4B /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8141651D525FD200D92B4B /* PartyCell.swift */; };
+		7B8141691D5263CB00D92B4B /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8141681D5263CB00D92B4B /* PartyRock.swift */; };
+		7B81416A1D5263CB00D92B4B /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8141681D5263CB00D92B4B /* PartyRock.swift */; };
 		7BAB179D1D5240B9004F81C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB179C1D5240B9004F81C8 /* AppDelegate.swift */; };
 		7BAB179F1D5240B9004F81C8 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB179E1D5240B9004F81C8 /* MainVC.swift */; };
 		7BAB17A21D5240B9004F81C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB17A01D5240B9004F81C8 /* Main.storyboard */; };
@@ -32,6 +36,8 @@
 /* Begin PBXFileReference section */
 		7B81415E1D525D6900D92B4B /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
 		7B8141621D525EC400D92B4B /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		7B8141651D525FD200D92B4B /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		7B8141681D5263CB00D92B4B /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 		7BAB17991D5240B9004F81C8 /* MansionOfParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MansionOfParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BAB179C1D5240B9004F81C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BAB179E1D5240B9004F81C8 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 		7BAB17BC1D5240F8004F81C8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7B8141651D525FD200D92B4B /* PartyCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 		7BAB17BD1D5240FF004F81C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B8141681D5263CB00D92B4B /* PartyRock.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -247,6 +255,8 @@
 			files = (
 				7B8141631D525EC400D92B4B /* VideoVC.swift in Sources */,
 				7BAB179F1D5240B9004F81C8 /* MainVC.swift in Sources */,
+				7B8141691D5263CB00D92B4B /* PartyRock.swift in Sources */,
+				7B8141661D525FD200D92B4B /* PartyCell.swift in Sources */,
 				7BAB179D1D5240B9004F81C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B8141641D525EC400D92B4B /* VideoVC.swift in Sources */,
+				7B81416A1D5263CB00D92B4B /* PartyRock.swift in Sources */,
 				7BAB17B21D5240BA004F81C8 /* MansionOfPartyTests.swift in Sources */,
+				7B8141671D525FD200D92B4B /* PartyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

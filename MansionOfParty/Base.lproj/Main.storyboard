@@ -21,7 +21,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="1Cw-xW-0dP">
@@ -66,11 +66,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="124" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gld-qI-dk1">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="DpE-SG-f4u">
-                                        <frame key="frameInset" minY="28" width="768" height="124"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="124" id="DpE-SG-f4u" customClass="PartyCell" customModule="MansionOfParty" customModuleProvider="target">
+                                        <frame key="frameInset" minY="28" width="375" height="124"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DpE-SG-f4u" id="8tE-2g-x3f">
-                                            <frame key="frameInset" width="768" height="123"/>
+                                            <frame key="frameInset" width="375" height="123"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="kPt-th-4L1">
@@ -96,6 +96,10 @@
                                                 <constraint firstItem="kPt-th-4L1" firstAttribute="centerY" secondItem="8tE-2g-x3f" secondAttribute="centerY" id="hUn-oe-16Y"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="kPt-th-4L1" id="X4O-ns-ai6"/>
+                                            <outlet property="videoTitle" destination="ZDq-By-6Qe" id="6No-fs-wZT"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -115,12 +119,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="Gld-qI-dk1" id="HSF-Uv-wTk"/>
                         <segue destination="bHI-m8-d9r" kind="showDetail" identifier="VideoVC" id="z69-iM-kjk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="282.03125" y="-282.421875"/>
+            <point key="canvasLocation" x="83" y="-361"/>
         </scene>
         <!--VideoVC-->
         <scene sceneID="9fh-kO-z7Q">
@@ -131,7 +136,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4bx-U1-qBV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0Td-f0-rjC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m5R-I2-fLW">

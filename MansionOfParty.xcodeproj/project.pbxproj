@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7BAB179D1D5240B9004F81C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB179C1D5240B9004F81C8 /* AppDelegate.swift */; };
-		7BAB179F1D5240B9004F81C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB179E1D5240B9004F81C8 /* ViewController.swift */; };
+		7BAB179F1D5240B9004F81C8 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB179E1D5240B9004F81C8 /* MainVC.swift */; };
 		7BAB17A21D5240B9004F81C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB17A01D5240B9004F81C8 /* Main.storyboard */; };
 		7BAB17A41D5240B9004F81C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB17A31D5240B9004F81C8 /* Assets.xcassets */; };
 		7BAB17A71D5240B9004F81C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB17A51D5240B9004F81C8 /* LaunchScreen.storyboard */; };
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		7BAB17991D5240B9004F81C8 /* MansionOfParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MansionOfParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BAB179C1D5240B9004F81C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BAB179E1D5240B9004F81C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BAB179E1D5240B9004F81C8 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7BAB17A11D5240B9004F81C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BAB17A31D5240B9004F81C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BAB17A61D5240B9004F81C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,8 +77,10 @@
 		7BAB179B1D5240B9004F81C8 /* MansionOfParty */ = {
 			isa = PBXGroup;
 			children = (
+				7BAB17BE1D524106004F81C8 /* Controller */,
+				7BAB17BD1D5240FF004F81C8 /* Model */,
+				7BAB17BC1D5240F8004F81C8 /* View */,
 				7BAB179C1D5240B9004F81C8 /* AppDelegate.swift */,
-				7BAB179E1D5240B9004F81C8 /* ViewController.swift */,
 				7BAB17A01D5240B9004F81C8 /* Main.storyboard */,
 				7BAB17A31D5240B9004F81C8 /* Assets.xcassets */,
 				7BAB17A51D5240B9004F81C8 /* LaunchScreen.storyboard */,
@@ -94,6 +96,28 @@
 				7BAB17B31D5240BA004F81C8 /* Info.plist */,
 			);
 			path = MansionOfPartyTests;
+			sourceTree = "<group>";
+		};
+		7BAB17BC1D5240F8004F81C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7BAB17BD1D5240FF004F81C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7BAB17BE1D524106004F81C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BAB179E1D5240B9004F81C8 /* MainVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BAB179F1D5240B9004F81C8 /* ViewController.swift in Sources */,
+				7BAB179F1D5240B9004F81C8 /* MainVC.swift in Sources */,
 				7BAB179D1D5240B9004F81C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MansionOfParty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omnificCondition.MansionOfParty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MansionOfParty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omnificCondition.MansionOfParty;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -25,20 +25,36 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROj-bT-duy">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iH5-JY-AFh">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="fWC-Rp-RAT"/>
-                                            <constraint firstAttribute="height" constant="74" id="yrm-w3-mfO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
-                                        <state key="normal" title="Top Videos"/>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="QYJ-xF-lB4">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iH5-JY-AFh">
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                                <state key="normal" title="Top Videos">
+                                                    <color key="titleColor" red="0.83921568627450982" green="0.0" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPM-pp-Cnm">
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                                <state key="normal" title="Top Songs">
+                                                    <color key="titleColor" red="0.83921568629999999" green="0.0" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHK-hE-iTs">
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                                <state key="normal" title="Events">
+                                                    <color key="titleColor" red="0.83921568629999999" green="0.0" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="iH5-JY-AFh" firstAttribute="leading" secondItem="ROj-bT-duy" secondAttribute="leading" constant="8" id="M69-FM-led"/>
+                                    <constraint firstAttribute="trailing" secondItem="QYJ-xF-lB4" secondAttribute="trailing" constant="10" id="CLA-ZK-aA5"/>
+                                    <constraint firstItem="QYJ-xF-lB4" firstAttribute="centerY" secondItem="ROj-bT-duy" secondAttribute="centerY" id="HhX-sb-rJB"/>
                                     <constraint firstAttribute="height" constant="114" id="Smu-k6-FLk"/>
-                                    <constraint firstItem="iH5-JY-AFh" firstAttribute="top" secondItem="ROj-bT-duy" secondAttribute="top" constant="23" id="syb-25-ogO"/>
+                                    <constraint firstItem="QYJ-xF-lB4" firstAttribute="centerX" secondItem="ROj-bT-duy" secondAttribute="centerX" id="cc1-qX-hWn"/>
+                                    <constraint firstItem="QYJ-xF-lB4" firstAttribute="leading" secondItem="ROj-bT-duy" secondAttribute="leading" constant="10" id="wul-k4-YJS"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -55,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="315.625" y="-197.4609375"/>
+            <point key="canvasLocation" x="282" y="-282"/>
         </scene>
     </scenes>
     <resources>
